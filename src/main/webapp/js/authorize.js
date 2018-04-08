@@ -4,7 +4,7 @@ $("#passwordValidation").hide();
 
 var token = sessionStorage.getItem('sessionToken');
 if(token == null || token.length < 30){
-	if(location.pathname == '/Warehouse/page-register.html' || location.pathname == '/Warehouse/page-login.html'){
+	if(location.pathname == '/Warehouse/page-register.html' || location.pathname == '/Warehouse/page-login.html' || location.pathname == '/page-register.html' || location.pathname == '/page-login.html'){
 	}
 	else{
 	window.location.replace('page-login.html');
