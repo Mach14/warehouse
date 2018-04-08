@@ -1,0 +1,128 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+            <div class="container-fluid" >
+	<h1>File Upload with Jersey</h1>
+	
+	                <div class="row">
+	 <div class="col-lg-3">
+                </div>
+                                    <div class="col-lg-6">
+                <div class="card card-outline-primary">
+                            <div class="card-header">
+                                <h4 class="m-b-0 text-white">Submit your run</h4>
+                            </div>
+                                                        <div class="card-body">
+                            
+		<form action="restservices/file/order" method="post" enctype="multipart/form-data" id="runForm">
+		                                    <div class="form-body">
+		 <h3 class="card-title m-t-15">Run Info</h3>
+                                        <hr>
+                                        	 		<input id="AccountID" readonly name="AccountID" size="45"/>
+                                        
+                                          <div class="row">
+                                          <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date of Run</label>
+                                                     <input type="date" class="form-control"   id="DateOfRun" name="DateOfRun">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        
+                                        
+                                          <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Total Lead</label>
+                                                    <input type="number" class="form-control" name="TotalLead" id="TotalLead">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Total Metal</label>
+                                                <input type="number"  class="form-control" name="TotalMetal" id="TotalMetal">
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        
+                                        
+                                            <div class="row">
+                                     
+                                            <!--/span-->
+                                                  <div class="col-md-6">
+                                                  
+  											<div class="form-group">
+              						            <label>First Screenshot</label>
+										    <label for="ScreenshotOne"><small>Screenshot of WH before you started unloading.</small></label>
+										    			   <input type="file" class="form-control-file" name="file" size="45" accept="image/*"/> 
+ 												 </div>                                          
+                                            </div>
+                                                                                      
+                                            <div class="col-md-6">
+ 											 <div class="form-group">
+                         						 <label>Second Screenshot</label>
+															    <label for="ScreenshotTwo"><small>Screenshot of WH after you finished unloading.</small></label>
+															    <input type="file" class="form-control-file" name="file2" size="45" accept="image/*"/>
+															    
+															  </div>
+                                            </div>
+                                        </div>
+	 
+	      <div class="form-group">
+  <label for="comment">Comment:</label>
+	     <textarea class="form-control" rows="10" id="Comment" name="Comment"></textarea>
+</div>
+	 
+	 
+	    <h3 class="box-title m-t-40">Member Info</h3>
+                                        <hr>
+  <button type="button" class="btn btn-info">+ Add Member</button>
+<br></br>
+                                                   
+
+	   
+
+	   
+	   <input type="submit" value="Upload It" class="hidden" id="runFormSubmit" />
+	   </div>
+	</form>
+	
+	 <button id="submitForm" class="btn btn-primary"> <i class="fa fa-check"></i> Submit Run</button>
+     <button type="button" class="btn btn-inverse">Cancel</button>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	
+ </div>
+</body>
+</html>

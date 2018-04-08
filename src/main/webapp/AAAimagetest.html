@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:** -->
+    <!--[if lt IE 9]>
+    <script src="https:**oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https:**oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+
+  <div class="container-fluid" >
+                <!-- Start Page Content -->
+                               
+                <div class="row">
+                  <div class="col-lg-3">
+                </div>
+                    <div class="col-lg-6">
+                        <div class="card card-outline-primary">
+                            <div class="card-header">
+                                <h4 class="m-b-0 text-white">Submit your run</h4>
+                            </div>
+                            <div class="card-body">
+                                <form action="#" method="post" id="submitRunForm" enctype="multipart/form-data">
+                                    <div class="form-body">
+                                        <h3 class="card-title m-t-15">Run Info</h3>
+                                        <hr>
+                                    
+                                        <!--/row-->
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group has-success">
+                                                    <label class="control-label">Gender</label>
+                                                    <select class="form-control custom-select">
+                                                        <option value="">Male</option>
+                                                        <option value="">Female</option>
+                                                    </select>
+                                                    <small class="form-control-feedback"> Select your gender </small> </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label class="control-label">Date of Run</label>
+                                                    <input type="date" class="form-control" placeholder="dd/mm/yyyy" name="DateOfRun">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+          <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Total Lead</label>
+                                                    <input type="number" class="form-control" name="TotalLead">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Total Metal</label>
+                                                    <input type="number" class="form-control" name="TotalMetal">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <!--/row-->
+                                        <div class="row">
+                                     
+                                            <!--/span-->
+                                                  <div class="col-md-6">
+                                                  
+  											<div class="form-group">
+              						            <label>First Screenshot</label>
+
+										    <label for="exampleFormControlFile1"><small>Screenshot of WH before you started unloading.</small></label>
+										    <input type="file" class="form-control-file" id="ScreenshotOne" name="ScreenshotOne" accept="image/x-png">
+ 												 </div>
+
+                                            
+                                            </div>
+                                            
+                                            
+                                            <div class="col-md-6">
+ 											 <div class="form-group">
+                         						 <label>Second Screenshot</label>
+
+															    <label for="exampleFormControlFile1"><small>Screenshot of WH after you finished unloading.</small></label>
+															    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="ScreenshotTwo" id="ScreenshotTwo" accept="image/x-png">
+															  </div>
+                                            </div>
+                                        </div>
+                                        <h3 class="box-title m-t-40">Member Info</h3>
+                                        <hr>
+                                      
+                              
+                                        
+                                        
+ <button type="button" class="btn btn-info">+ Add Member</button>
+<br></br>
+                                            <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label class="control-label">Member</label>
+                                                    <input class="form-control" type="text" value="Nicholas Corleone" readonly="">
+
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                          <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="control-label">Lead</label>
+                                                    <input type="number" id="firstName" class="form-control" placeholder="John doe">
+                                                </div>
+                                            </div>
+                                             <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <label class="control-label">Metal</label>
+                                                    <input type="number" id="firstName" class="form-control" placeholder="John doe">
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                        </div>
+                                        <div class="row">
+                                        
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <select class="form-control custom-select" data-placeholder="Choose a Category" tabindex="1">
+                                                        <option value="Category 1">Category 1</option>
+                                                        <option value="Category 2">Category 2</option>
+                                                        <option value="Category 3">Category 5</option>
+                                                        <option value="Category 4">Category 4</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <!--/span-->
+                                          <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="text" id="firstName" class="form-control" placeholder="John doe">
+                                                </div>
+                                            </div>
+                                             <div class="col-md-3">
+                                                <div class="form-group">
+                                                    <input type="text" id="firstName" class="form-control" placeholder="John doe">
+                                                </div>
+                                                
+                                            </div>
+                                              <div class="col-md-1">
+                                                <div class="form-group">
+                                                      <button type="button" class="btn btn-danger">x</button>
+                                                                                               </div> 
+                                            </div>                                        
+                                            <!--/span-->   
+                                            
+                                        </div>  
+                                          
+                                        <!--/row-->
+                                        
+                                    <div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="10" id="comment"></textarea>
+</div>
+                                        
+                                    </div>
+                                    
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary"> <i class="fa fa-check"></i> Submit Run</button>
+                                        <button type="button" class="btn btn-inverse">Cancel</button>
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                <!-- Row -->
+               
+                <!-- Row -->
+                <!-- Row -->
+              
+                <!-- End PAge Content -->
+            </div>
+
+</body>
+  <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+
+<script></script>
+
+</html>
