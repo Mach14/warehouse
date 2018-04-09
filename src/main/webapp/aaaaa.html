@@ -23,8 +23,9 @@
 </head>
 
 <body>
+                   <div id="sidebar_placeholder"></div>
+
             <div class="container-fluid" >
-	<h1>File Upload with Jersey</h1>
 	
 	                <div class="row">
 	 <div class="col-lg-3">
@@ -81,14 +82,16 @@
                                                   
   											<div class="form-group">
               						            <label>First Screenshot</label>
-										    <label for="ScreenshotOne"><small>Screenshot of WH before you started unloading.</small></label>
-										    			   <input type="file" class="form-control-file" name="file" size="45" accept="image/*"/> 
+              						            <br>
+										    					<label for="ScreenshotOne"><small>Screenshot of WH before you started unloading.</small></label>
+										    			  		<input type="file" class="form-control-file" name="file" size="45" accept="image/*"/> 
  												 </div>                                          
                                             </div>
                                                                                       
                                             <div class="col-md-6">
  											 <div class="form-group">
                          						 <label>Second Screenshot</label>
+                         						 <br>
 															    <label for="ScreenshotTwo"><small>Screenshot of WH after you finished unloading.</small></label>
 															    <input type="file" class="form-control-file" name="file2" size="45" accept="image/*"/>
 															    
@@ -125,4 +128,9 @@
 	
  </div>
 </body>
+ <script src="js/lib/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="js/lib/bootstrap/js/popper.min.js"></script>
+    <script src="js/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/menu.js"></script>
 </html>
