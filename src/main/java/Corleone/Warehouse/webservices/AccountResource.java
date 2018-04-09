@@ -1,7 +1,6 @@
 package Corleone.Warehouse.webservices;
 import java.io.IOException;
 import java.util.Date;
-
 import javax.annotation.security.RolesAllowed;
 import javax.json.Json;
 import javax.json.JsonArray;
