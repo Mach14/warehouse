@@ -65,6 +65,9 @@ $.ajax({
 									
 						 $.ajax({
 								url: "restservices/accounts/"+acc.ID,
+								beforeSend: function (xhr) {
+					    			xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
+					    			},
 								success: function(response){
 								//	var data = $("#updateMemberForm"+acc.ID).serialize();
 
