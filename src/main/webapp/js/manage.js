@@ -63,9 +63,9 @@ $.ajax({
 									var rank  = rank1.options[rank1.selectedIndex].value;
 									var status = $("#status"+acc.ID+" option:selected").val();
 									
-									var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
+								//	var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
 
-									$.ajax(uri, {
+									/*$.ajax(uri, {
 						   				method: "DELETE",
 						   				beforeSend: function (xhr) {
 						   					var token = window.sessionStorage.getItem("sessionToken");
@@ -85,9 +85,9 @@ $.ajax({
 						   				
 						   				
 						   				
-						   			})
+						   			})*/
 						   			
-					/*	 $.ajax({
+						 $.ajax({
 								url: "restservices/accounts/"+acc.ID,
 								method: "POST",
 								beforeSend: function (xhr) {
@@ -107,7 +107,7 @@ $.ajax({
 					   				error: function(response){
 					   				console.log(response);
 					   			}
-					    	});	*/
+					    	});	
 
 						 });
 			});

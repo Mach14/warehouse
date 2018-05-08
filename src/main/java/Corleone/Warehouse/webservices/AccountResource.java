@@ -48,8 +48,8 @@ public class AccountResource {
 		return array.toString();
 	}
 	
-	@DELETE
-	@RolesAllowed("admin")
+	@POST
+	//@RolesAllowed("admin")
 	@Path("{ID}")
 	@Produces("application/json")
 	public String updateCustomer(@PathParam("ID") int id, @FormParam("Rank") String rank, @FormParam("Tier") int tier, @FormParam("Status") String status) {
