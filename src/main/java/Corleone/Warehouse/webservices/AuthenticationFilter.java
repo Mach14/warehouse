@@ -34,6 +34,7 @@ public class AuthenticationFilter implements ContainerRequestFilter {
  String user = claims.getSubject();
  String role = claims.get("role").toString();
  msc = new MySecurityContext(user, role, isSecure);
+ System.out.println("[1]Role: " + role);
 
  } catch (JwtException | IllegalArgumentException e) {
  System.out.println("Invalid JWT, processing as guest!");

@@ -63,6 +63,8 @@ $.ajax({
 									var rank  = rank1.options[rank1.selectedIndex].value;
 									var status = $("#status"+acc.ID+" option:selected").val();
 									
+									var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
+
 									$.ajax(uri, {
 						   				method: "DELETE",
 						   				beforeSend: function (xhr) {
@@ -72,12 +74,17 @@ $.ajax({
 						   				success: function(response){	
 						   				console.log("member updated");
 						   				
-						   				},
-
-						   				error: function(response){
-							   				console.log("ERROR: " + response);
-
-						   			}
+						   				$.post("restservices/accounts/"+acc.ID, data, function(response){
+								   			//	$("#submitRunForm")[0].reset(); 
+								   				console.log("success acc updated created");
+										    	})
+										    	},
+								   				error: function(response){
+								   				console.log(response);
+								   			}
+						   				
+						   				
+						   				
 						   			})
 						   			
 					/*	 $.ajax({
