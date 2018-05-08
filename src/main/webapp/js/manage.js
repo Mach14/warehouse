@@ -62,28 +62,6 @@ $.ajax({
 
 									var rank  = rank1.options[rank1.selectedIndex].value;
 									var status = $("#status"+acc.ID+" option:selected").val();
-									
-								//	var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
-
-									/*$.ajax(uri, {
-						   				method: "DELETE",
-						   				beforeSend: function (xhr) {
-						   					var token = window.sessionStorage.getItem("sessionToken");
-						   					xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
-						   					},
-						   				success: function(response){	
-						   				console.log("member updated");
-						   				
-						   				$.post("restservices/accounts/"+acc.ID, data, function(response){
-								   			//	$("#submitRunForm")[0].reset(); 
-								   				console.log("success acc updated created");
-										    	})
-										    	},
-								   				error: function(response){
-								   				console.log(response);
-								   			}
-
-						   			})*/
 						   			
 						 $.ajax({
 								url: "restservices/accounts/"+acc.ID,
@@ -93,9 +71,9 @@ $.ajax({
 					    	//		xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
 					    	//		},
 								success: function(response){
-								//	var data = $("#updateMemberForm"+acc.ID).serialize();
+									var data = $("#updateMemberForm"+acc.ID).serialize();
 
-									var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
+								//	var data = "ID=" + ID + "&Tier=" + tier+"&Rank="+rank+"&Status="+status;
 
 							    	$.post("restservices/accounts/"+acc.ID, data, function(response){
 					   			//	$("#submitRunForm")[0].reset(); 
