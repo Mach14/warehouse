@@ -18,6 +18,10 @@ var id = getUrlParameter('id');
 	$.ajax({
 		url : "restservices/orders/" + id,
 		method : "GET",
+		beforeSend: function (xhr) {
+			var token = window.sessionStorage.getItem("sessionToken");
+			xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
+			},
 		success : function (data) {
 
 			$("#DateOfRun").val(data.DateOfRun);

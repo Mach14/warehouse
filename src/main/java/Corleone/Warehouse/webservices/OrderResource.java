@@ -142,7 +142,7 @@ public class OrderResource {
 	}
 	
 	@GET
-	@RolesAllowed({"admin","user"})
+//	@RolesAllowed({"admin","user"})
 	@Path("{ID}")
 	@Produces("application/json")
 	public String getOrder(@PathParam("ID")int ID) throws IOException {

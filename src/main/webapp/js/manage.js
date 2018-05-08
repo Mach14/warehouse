@@ -65,7 +65,9 @@ $.ajax({
 									
 						 $.ajax({
 								url: "restservices/accounts/"+acc.ID,
+								method: "POST",
 								beforeSend: function (xhr) {
+							   		var token = window.sessionStorage.getItem("sessionToken");
 					    			xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
 					    			},
 								success: function(response){
@@ -82,12 +84,7 @@ $.ajax({
 					   				console.log(response);
 					   			}
 					    	});	
-						 
-						 
-						 
-						 
-						 
-					
+
 						 });
 			});
 		}
