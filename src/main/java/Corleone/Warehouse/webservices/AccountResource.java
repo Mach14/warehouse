@@ -6,6 +6,7 @@ import javax.json.Json;
 import javax.json.JsonArray;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObjectBuilder;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -47,7 +48,7 @@ public class AccountResource {
 		return array.toString();
 	}
 	
-	@POST
+	@DELETE
 	@RolesAllowed("admin")
 	@Path("{ID}")
 	@Produces("application/json")

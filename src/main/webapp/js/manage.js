@@ -55,7 +55,7 @@ $.ajax({
 					)		   				
 				
 					 $("#updateMember"+acc.ID).click(function() {
-					//	 var uri = "/restservices/accounts/" + acc.ID;
+						 var uri = "/restservices/accounts/" + acc.ID;
 						 			var ID = $("#accID").val();
 									var tier = $("#tier"+acc.ID+" option:selected").val();
 									var rank1 = document.getElementById("rank"+acc.ID);
@@ -63,7 +63,24 @@ $.ajax({
 									var rank  = rank1.options[rank1.selectedIndex].value;
 									var status = $("#status"+acc.ID+" option:selected").val();
 									
-						 $.ajax({
+									$.ajax(uri, {
+						   				method: "DELETE",
+						   				beforeSend: function (xhr) {
+						   					var token = window.sessionStorage.getItem("sessionToken");
+						   					xhr.setRequestHeader( 'Authorization', 'Bearer ' + token);
+						   					},
+						   				success: function(response){	
+						   				console.log("member updated");
+						   				
+						   				},
+
+						   				error: function(response){
+							   				console.log("ERROR: " + response);
+
+						   			}
+						   			})
+						   			
+					/*	 $.ajax({
 								url: "restservices/accounts/"+acc.ID,
 								method: "POST",
 								beforeSend: function (xhr) {
@@ -83,7 +100,7 @@ $.ajax({
 					   				error: function(response){
 					   				console.log(response);
 					   			}
-					    	});	
+					    	});	*/
 
 						 });
 			});
